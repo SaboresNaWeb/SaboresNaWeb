@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores Na Web</title>
+    <link rel="icon" href="LOGO_CAT_WEB.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="white-rectangle"></div>
+
+    <!-- Main Content Section -->
+    <div class="content">
+        <header>
+            <div class="first_words">
+                <h1>Sabores na Web</h1>
+            </div>
+            <div class="seconds_words">
+                <h2><a href="https://escolasdobidos.com/website/" target="_blank" style="text-decoration: none; color: inherit;">Agrupamento de Escolas Josefa de Óbidos</a></h2>
+            </div>
+            <div class="thirdly_words">
+                <a>Projeto "Sabores na Web" das Turmas GPSI & TCP do 11.º ano</a>
+            </div>
+            <div class="photo_of_cats">
+                <img src="photo_of_cats.png" alt="photo_of_cats">
+            </div>
+        </header>
+    </div>
+
+    <!-- Curtain -->
+    <div class="curtain">
+        
+    </div>
+
+    <!-- On First Photo Section -->
+    <div class="on_first_photo"></div>
+
+
+    <div class="f7"><img src="menu.jpg" alt="img_in_center"></div>
+    <div class="text-container">
+        <p>| Descrição |</p>
+    </div>
+
+         <div class="text-container_1">
+        <ul>
+    <li> O projeto envolve a criação de um sítio Web moderno, que é uma plataforma interactiva para a apresentação de receitas culinárias, combinando tecnologias de programação e gastronomia.  </li>
+
+    <li> A ideia principal é combinar os esforços dos alunos de dois cursos - "Gestão e Programação de Sistemas Informáticos"  e "Técnico de Cozinha/Pastelaria".   </li>
+    
+    <li> Isto permite-nos não só expandir as nossas competências profissionais, mas também aprender a trabalhar em equipa de forma eficaz num projeto comum.  </li>
+  
+    <li> O síte contém um catálogo estruturado de receitas, cada uma das quais é apresentada sob a forma de uma descrição com fotografias. Para além da lista tradicional de ingredientes e métodos de cozedura.  </li>
+  
+    <li> Inclui também o custo aproximado dos ingredientes, o que promove a literacia financeira e a compreensão dos princípios do consumo sustentável.   </li>
+        </ul>
+    </div>
+
+
+    
+
+
+    <!-- Last Line Section -->
+    <div class="last_line"> 
+        <a>Agrupamento de escolas Josefa de Óbidos | PAVLO KOZII & ALEX NALYVAIKO | 11.º - Gestão e Programação de Sistemas de Informação</a>
+    </div>
+
+    <!-- Sticky Header Section -->
+    <div class="sticky-header">
+        <div class="menu-cont"></div>
+    </div>
+
+ <!-- Menu Section -->
+    <div class="menu-cont">
+        <div class="menu-item">
+            <a>RECEITAS</a>
+            <div class="dropdown-menu">
+                <a href="Entradas.html">Entradas</a>
+                <a href="Pratos de Peixe.html">Pratos de peixe</a>
+                <a href="Pratos de Carne.html">Pratos de Carne</a>
+                <a href="Pratos de Vegetariano.html">Pratos de Vegetariano</a>
+                <a href="Sobremesa.html">Sobremesas</a>
+            </div>
+        </div>
+        <a href="index_sob_nos.html" data-tooltip="SOBRE NÓS">SOBRE NÓS</a>
+    </div>
+    
+ <!-- Text under photo of class Sections -->
+    <div class="text-container_photo">
+       <a>Turma do 11.º GPSI & TCP (Sem o seu colega italiano😄)</a>
+    </div>
+
+    <!-- Image Sections -->
+    <div class="f1"><img src="LOGOTIPO_PRETO.png" alt="Logotipo"></div>
+    <div class="f2"><img src="LOGO_CAT_WEB.png" alt="Logotipo2"></div>
+    <div class="f3"><img src="LOGOTIPO_PRETO_B.png" alt="Logotipo3"></div>
+    <div class="f4"><img src="f_coz1.JPG" alt="img_in_center1"></div>
+    <div class="f5"><img src="f_coz2.JPG" alt="img_in_center2"></div>
+    <div class="f6"><img src="f_coz3.JPG" alt="img_in_center3"></div>
+    <div class="f7_1"><img src="f_coz4.JPG" alt="img_in_center4"></div>
+    <div class="f8"><img src="Foto_Home.jpg" alt="Foto_Home"></div>
+    <div class="f9"><img src="coking.png" alt="cok"></div>
+    <div class="f10"><img src="computer02.png" alt="comp"></div>
+
+    <div class="cat1"><img src="Cat_logo1-removebg-preview.png" alt="cat1"></div>
+
+    <audio id="cat-sound" src="cat-meow-8-fx-306184.mp3" preload="auto"></audio>
+    <!-- Background Section -->
+    <div class="f_fone"></div>
+
+    <!-- Scripts -->
+    <script>  
+        window.onbeforeunload = function() {
+            window.scrollTo(0, 0); 
+        };
+
+        window.addEventListener("scroll", function () {
+            let header = document.querySelector(".sticky-header");
+            let scrollY = window.scrollY;
+
+            if (scrollY < 600) {
+                header.style.opacity = 1;  
+            } else {
+                header.style.opacity = 0.9;
+            }
+        });
+
+        window.addEventListener("scroll", function() {
+            let menu = document.querySelector(".menu-cont");
+            let curtain = document.querySelector(".curtain");
+        });
+
+        const catElement = document.querySelector('.cat1');
+        const catSound = document.getElementById('cat-sound');
+
+        catElement.addEventListener('click', () => {
+            catSound.play(); 
+        });
+    </script>
+
+</body>
+</html>
