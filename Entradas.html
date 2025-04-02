@@ -40,6 +40,7 @@
  <div class="f2">
     <img src="Cat.png" alt="Cat">
 </div>
+<audio id="cat-sound" src="cat-meow-8-fx-306184.mp3" preload="auto"></audio>
 
 <div class="f3">
     <img src="Faca.png" alt="Faca">
@@ -512,5 +513,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener("scroll", setActiveLink);
 });
+    
+const catElement = document.querySelector('.cat1');
+        const catSound = document.getElementById('cat-sound');
+
+        catElement.addEventListener('click', () => {
+            catSound.play(); 
+        });
 
 </script>
